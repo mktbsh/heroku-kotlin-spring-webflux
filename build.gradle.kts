@@ -48,11 +48,3 @@ tasks.withType<KotlinCompile> {
 tasks.withType<Test> {
 	useJUnitPlatform()
 }
-
-/**
- * Heroku
- */
-val herokuStageBuild by tasks.registering {
-	group = "heroku"
-	dependsOn("bootJar")
-}
