@@ -34,7 +34,9 @@ dependencies {
 	testImplementation("io.projectreactor:reactor-test")
 }
 
-defaultTasks("clean", "bootJar")
+tasks.getByName<Jar>("jar") {
+	enabled = false
+}
 
 tasks.withType<KotlinCompile> {
 	kotlinOptions {
