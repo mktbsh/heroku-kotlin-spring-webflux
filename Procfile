@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -jar build/libs/*.jar --server.port=$PORT com.mktbsh.ktdemo.KtdemoApplication
+web: java $JAVA_OPTS -jar build/libs/*.jar --server.port=$PORT

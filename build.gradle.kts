@@ -34,6 +34,8 @@ dependencies {
 	testImplementation("io.projectreactor:reactor-test")
 }
 
+defaultTasks("clean", "bootJar")
+
 tasks.withType<KotlinCompile> {
 	kotlinOptions {
 		freeCompilerArgs = listOf("-Xjsr305=strict")
