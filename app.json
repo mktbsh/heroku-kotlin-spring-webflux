@@ -1,0 +1,19 @@
+{
+  "name": "",
+  "description": "",
+  "repository": "",
+  "env": {
+    "GRADLE_TASK": "herokuStageBuild"
+  },
+  "addon": [
+    {
+      "plan": "heroku-postgresql"
+    }
+  ],
+  "stack": "heroku-20",
+  "buildpacks": [
+    {
+      "url": "heroku/gradle"
+    }
+  ]
+}
